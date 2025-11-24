@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP DE LOGIN</title>
+
+  <!-- Ionic via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ion-app>
+    <ion-router use-hash="true">
+      <ion-route url="/" component="app-login"></ion-route>
+      <ion-route url="/inicial" component="app-inicial"></ion-route>
+      <ion-route url="/cadastro" component="app-cadastro"></ion-route>
+      <ion-route url="/redefinir-senha" component="app-redefinir-senha"></ion-route>
+    </ion-router>
+
+    <ion-router-outlet></ion-router-outlet>
+
+  </ion-app>
+  <script type="module" src="cadastro.js"></script>
+  <script type="module" src="login.js"></script>
+  <script type="module" src="redefinirSenha.js"></script>
+  <script type="module" src="inicial.js"></script>
+</body>
+
+</html>
